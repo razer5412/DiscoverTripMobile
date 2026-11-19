@@ -1,5 +1,6 @@
 package com.example.discovertrip
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -7,6 +8,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.discovertrip.ui.auth.LoginActivity
+import com.example.discovertrip.ui.trip.DashboardActivity
 import com.example.discovertrip.viewmodel.AuthViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -28,10 +31,14 @@ class MainActivity : AppCompatActivity() {
         authViewModel.authenticatedUser.observe(this) { isAuthenticated ->
             if (isAuthenticated) {
                 Toast.makeText(this, "Welcome to DiscoverTrip - Session Active", Toast.LENGTH_SHORT).show()
-                // TODO: Navigate to Dashboard / Trip List Activity
+                val intent = Intent(this, DashboardActivity::class.java)
+                startActivity(intent)
+                finish()
             } else {
                 Toast.makeText(this, "Please Log In", Toast.LENGTH_SHORT).show()
-                // TODO: Navigate to Login Activity
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
     }
