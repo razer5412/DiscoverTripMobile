@@ -1,0 +1,21 @@
+# Task List - DiscoverTrip MVVM Architecture & MongoDB Atlas Integration
+
+- [x] **Phase 1: Dependencies & Configuration**
+  - [x] Add Retrofit, Gson, Coroutines, and Lifecycle dependencies to `libs.versions.toml` and `app/build.gradle.kts`.
+  - [x] Update compileSdk and targetSdk to 37.
+  - [x] Create base utility classes (`Resource` sealed class).
+- [x] **Phase 2: Data Layer (Remote, Local, Models)**
+  - [x] Create DTOs & Domain Models (`LoginRequest`, `LoginResponse`, `User`, `Trip`).
+  - [x] Create Retrofit API Interfaces (`AuthApiService`, `TripApiService`, `RetrofitClient` with MongoDB Atlas backend configuration).
+  - [x] Create Session Manager for token persistence (`SessionManager`).
+- [x] **Phase 3: Repository Layer (Single Source of Truth)**
+  - [x] Implement `AuthRepository` (Handling authentication, token management, connection to MongoDB backend).
+  - [x] Implement `TripRepository` (Handling CRUD operations and advanced search/filtering).
+- [x] **Phase 4: ViewModel Layer**
+  - [x] Implement `AuthViewModel` (Managing authentication state, coroutine scopes).
+  - [x] Implement `TripViewModel` (Managing CRUD and advanced filtering/search state).
+- [x] **Phase 5: UI & Session Management**
+  - [x] Update `MainActivity` to observe session state from `AuthViewModel`.
+- [x] **Phase 6: Verification & Walkthrough**
+  - [x] Run Gradle build (`app:assembleDebug`) successfully.
+  - [x] Create `walkthrough.artifact.md`.
