@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjetntegrationMobile" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/orange_clair</item>
+        <item name="android:colorBackground">@color/fond</item>
+        <item name="android:textColorPrimary">@color/texte</item>
+        <item name="colorError">@color/erreur</item>
+    </style>
+
+    <style name="Theme.ProjetntegrationMobile" parent="Base.Theme.ProjetntegrationMobile" />
+</resources>

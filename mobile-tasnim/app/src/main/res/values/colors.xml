@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- couleurs de DiscoverTrip (celles du site) -->
+    <color name="orange">#E85D04</color>
+    <color name="orange_clair">#FDEBDC</color>
+    <color name="texte">#1F1A17</color>
+    <color name="texte_discret">#6F665D</color>
+    <color name="fond">#FAF8F4</color>
+    <color name="bordure">#ECE6DC</color>
+    <color name="erreur">#B00020</color>
+
+    <!-- états d'une réservation (couleur du texte et couleur de fond de l'item, comme le TP4) -->
+    <color name="statut_attente">#C4500A</color>
+    <color name="statut_attente_fond">#FDF2CC</color>
+    <color name="statut_confirmee">#1D7A3A</color>
+    <color name="statut_confirmee_fond">#E3F5E8</color>
+    <color name="statut_refusee">#B00020</color>
+    <color name="statut_refusee_fond">#FBE4E4</color>
+</resources>
