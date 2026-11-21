@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DiscoverTrip</string>
+
+    <!-- Tiroir de navigation -->
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="header_logo_description">Logo DiscoverTrip</string>
+    <string name="header_titre_visiteur">Visiteur</string>
+    <string name="header_sous_titre_visiteur">Connectez-vous pour réserver</string>
+
+    <!-- Entrées du menu -->
+    <string name="menu_explorer">Explorer</string>
+    <string name="menu_carte">Carte</string>
+    <string name="menu_mes_reservations">Mes réservations</string>
+    <string name="menu_compte">Mon compte</string>
+    <string name="menu_demandes">Demandes reçues</string>
+    <string name="menu_statistiques">Statistiques</string>
+    <string name="menu_connexion">Se connecter</string>
+    <string name="menu_deconnexion">Se déconnecter</string>
+</resources>

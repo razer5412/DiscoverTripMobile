@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.auth.LoginFragment"
+        android:label="Connexion"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.auth.RegisterFragment"
+        android:label="Inscription"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/explorerFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.explorer.ExplorerFragment"
+        android:label="Explorer"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.detail.EventDetailFragment"
+        android:label="Détail"
+        tools:layout="@layout/fragment_placeholder">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.map.MapFragment"
+        android:label="Carte"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/myReservationsFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.reservation.MyReservationsFragment"
+        android:label="Réservations"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.stats.StatsFragment"
+        android:label="Statistiques"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/receivedReservationsFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.reservation.ReceivedReservationsFragment"
+        android:label="Demandes"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/plannerStatsFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.stats.PlannerStatsFragment"
+        android:label="Statistiques"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="tn.rnu.isetr.projetntegrationmobile.ui.profile.ProfileFragment"
+        android:label="Compte"
+        tools:layout="@layout/fragment_placeholder" />
+</navigation>
